@@ -1,0 +1,662 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+html { box-sizing: border-box; font-size: 125%;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+/* font-family: 'Catamaran', sans-serif;
+font-family: 'Pacifico', cursive; */
+
+/* *********** */
+/* BASE Styles */
+/* *********** */
+
+/* font color due to contrast ratio being lower than 4.5:1 f */
+html {
+    font-family: 'Catamaran', sans-serif;
+    color: #fff;
+
+}
+
+body {
+    background: #4a4a4a;
+}
+/* ***************** */
+ul {
+    list-style: none;
+    margin: 0;
+}
+
+li {
+    margin: 20px 0;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1250px;
+    width: 90%;
+}
+
+figure {
+    margin: 0;
+}
+
+/* ***************** */
+/* TYPOGRAPHY Styles */
+/* ***************** */
+
+h1,
+h2,
+h3 {
+    font-family: 'Pacifico', cursive;
+    color: #F2A11C;
+}
+
+h1 {
+    font-size: 6.5rem;
+}
+
+h2,
+h3 {
+    font-size: 2.1rem;
+}
+
+a {
+    font-size: 0.9rem;
+    /* line-height: 29px; */
+    text-decoration: none;
+    font-weight: 800;
+    color: #F2A11C;
+}
+
+a.readMore {
+    font-family: 'Catamaran', sans-serif;
+    color: #F2A11C;
+    background: #000;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    position: relative;
+    right: -25px;
+    bottom: -10px;
+}
+
+.gram h2 {
+    color: #fff;
+    text-align: center;
+}
+
+.alissa h2 {
+    color: #000;
+}
+/* ************* */
+/* HEADER Styles */
+/* ************* */
+
+header {
+    background-image: url(./biker-land-assets/image-1.jpg);
+    height: 100vh;
+    background-size: cover;
+    padding: 10px 0;
+    background-position: center;
+}
+
+.topNav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.topNav a{
+    padding: 15px 30px;
+    color: #F4F4F4;
+}
+
+.fa-bars {
+    visibility: hidden;
+}
+.socialFlex{
+    height: 80vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    margin: 0px;
+    flex-basis: 90%;
+}
+
+.socialFlex ul {
+    flex-basis: 10%;
+}
+
+
+.thirdNav i {
+    font-size: 2rem;
+    text-align: center;
+    color: #fff;
+}
+
+
+/* ************ */
+/* ABOUT Styles */
+/* ************ */
+
+section.about{
+    min-height: 70vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+section.about div,
+section.about figure{
+    flex-basis: 50%;
+}
+
+div .aboutSection{
+    margin: 100px 60px;
+}
+
+/* searched up video online to try to maneuver an img the same way as a background img */
+.about img {
+    object-fit: cover;
+}
+
+
+
+/* ************** */
+/* MISSION Styles */
+/* ************** */
+
+section.mission{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 50%;
+    min-height: 70vh;
+}
+
+section.mission div,
+section.mission figure{
+    flex-basis: 50%;
+}
+
+div .missionSection{
+    margin: 100px 50px;
+}
+
+.mission img {
+    object-fit:cover
+}
+/* ************* */
+/* ALISSA Styles */
+/* ************* */
+
+section.alissa {
+    background-color: #fff;
+    color: #000;
+    min-height: 60vh;
+}
+
+section.alissa .wrapper {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+section.alissa figure {
+    flex-basis: 30%;
+    margin: 60px 30px 60px 60px;
+}
+
+section .alissa img {
+    height: auto;
+}
+
+section.alissa div {
+    flex-basis: 70%;
+    margin: 60px;
+}
+
+
+/* **************** */
+/* THIRD NAV Styles */
+/* **************** */
+
+section.thirdNav {
+    background-image: url(./biker-land-assets/image-5.jpg);
+    color: #000;
+    /* min-height: 50vh; */
+    background-size: cover;
+    background-position: center;
+}
+
+.thirdNav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+}
+
+.thirdNav li{
+    flex-basis: 15%;
+    text-align: center;
+}
+
+.thirdNav i {
+    display: block;
+    padding: 10px;
+}
+
+/* *********** */
+/* GRAM Styles */
+/* *********** */
+
+div .gram {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.gram a {
+    flex-basis: calc(33.33% - 20px);
+    margin: 10px;
+}
+/* ************* */
+/* FOOTER Styles */
+/* ************* */
+
+footer{
+    background-color: #1F2022;
+}
+
+.flexParent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    /* margin-left: 150px;
+    min-height: 45vh; */
+}
+
+div .contact {
+    flex-basis: 50%;
+}
+
+div .subscribe{
+    flex-basis: 50%;
+
+}
+
+input[type=email] {
+    height: 40px;
+    padding: 0 13px;
+    width: 70%;
+    display: inline-block;
+    margin: 0;
+
+}
+
+button{
+    height: 40px;
+    text-transform: uppercase;
+    font-size: .8rem;
+    padding: 5px 15px;
+    display: inline-block;
+    margin-left: -5px;
+    border: 3px solid #F2A11C;
+    background: #F2A11C;
+
+}
+
+.bottomNav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 0;
+}
+
+.bottomNav a{
+    margin: 10px 20px;
+    color: #F4F4F4;
+    text-transform: uppercase;
+}
+
+.copyright{
+    background: #000;
+    text-align: center;
+}
+
+.copyright p{
+    margin: 0;
+    font-size: .8rem;
+    padding-top: 10px;
+}
+
+/* ****************** */
+/* RESPONSIVE Section */
+/* ****************** */
+
+@media (max-width: 1282px) {
+    /* ALISSA Section */
+
+    section.alissa figure {
+        margin: 40px;
+        flex-basis: 40%;
+    }
+
+    section.alissa div {
+        margin: 10px 0 30px 0;
+        flex-basis: 60%;
+    }
+}
+
+@media (max-width: 950px) {
+    .flexParent {
+            flex-direction: column;
+            width: 100%;
+            text-align: center;
+            margin: 20px 0 50px 0;
+        }
+}
+
+@media (max-width: 630px) {
+    h1 {
+            margin-top: 0px;
+            font-size: 5rem;
+        }
+    
+
+    /* ABOUT Section */
+    section.about{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    div .aboutSection,
+    div .missionSection{
+        margin: 50px 60px 70px 60px;;
+    }
+
+    a.readMore {
+        position:static;
+    }
+    /* MISSION Section */
+
+    section.mission {
+        flex-direction: column;
+        text-align: center;
+    } 
+    
+    /* ALISSA Section */
+    section.alissa .wrapper {
+        flex-direction: row;
+        text-align: left;
+        align-items: center;
+    }
+    
+    section.alissa figure {
+        margin: 20px;
+        flex-basis: 40%;
+    }
+
+    section.alissa div {
+        margin: 10px 0 30px 0;
+        flex-basis: 60%;
+    }
+
+
+    /* THIRD NAV Section */
+    .thirdNav ul {
+        justify-content: space-evenly;
+    }
+
+    /* GRAM Section */
+
+    div .gram {
+        padding: 0px;
+        margin: 30px 0px;
+    }
+    .gram h2 {
+        margin-top: 30px;
+    }
+    .gram a {
+        flex-basis: 33%;
+    }
+
+
+    /* FOOTER Section */
+
+    .flexParent {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        margin: 20px 0 50px 0;
+    }
+
+    .contact h3 {
+        margin: 20px 0px;
+        font-size: 1rem;
+    }
+    .contact p {
+        margin: 0;
+    }
+    input[type=email] {
+        width: 100%;
+        text-align: center;
+    }
+    button {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    legend {
+        font-size: 1rem;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    .bottomNav ul{
+        padding-top: 30px;
+    }
+    .bottomNav a {
+        margin: 5px 10px;
+        color: #F4F4F4;
+        text-transform: capitalize;
+        font-weight: 400;
+    }
+
+    .copyright {
+        background: #000;
+        text-align: center;
+    }
+
+    .copyright p {
+        margin: 0;
+        font-size: 1rem;
+        padding-top: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    .socials ul {
+        display: none;
+    }
+
+    .topNav {
+        display: none;
+    }
+    .fa-bars {
+        visibility: visible;
+        width: 100%;
+        text-align: right;
+        padding-right: 10px;
+    }
+}
+
+
+/* ************** */
+/* Mobile Version */
+/* ************** */
+
+@media (max-width: 326px) {
+    
+    /* HEADER Section */
+    header {
+            background-image: url(./biker-land-assets/image-1-mobile.jpg);
+        }
+    
+    h1 {
+        margin-top: 50px;
+        font-size: 3rem;
+    }
+
+    .topNav ul {
+        display: none;
+    }
+    
+    .socials ul {
+        display: none;
+    }
+
+    /* ABOUT Section */
+    section.about {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    div.aboutSection {
+        margin: 50px 20px;
+    }
+
+    h2{
+        margin: 0px;
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: .8rem;
+        line-height: 25px;
+        margin: 30px 0;
+    }
+    a.readMore {
+
+        position:static;
+        right: 0px;
+        bottom: 0px;
+    }
+
+    /* MISSION Section */
+    section.mission {
+        flex-direction: column;
+        text-align: center;
+    } 
+
+    div.missionSection {
+        margin: 50px 20px;
+    }
+
+    
+    /* ALISSA Section */
+    section.alissa .wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    section.alissa figure {
+        margin: 20px;
+    }
+
+    section.alissa div {
+        margin: 10px 0 30px 0;
+    }
+
+
+    /* THIRD NAV Section */
+    .thirdNav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    /* GRAM Section */
+
+    div .gram {
+        padding: 0px;
+        margin: 30px 0px;
+    }
+    .gram h2 {
+        margin-top: 30px;
+    }
+    .gram a {
+        flex-basis: 50%;
+    }
+
+    .gram a:last-of-type {
+        display: none;
+    }
+
+    /* FOOTER Section */
+
+    .flexParent {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        margin: 20px 0 50px 0;
+    }
+
+    .contact h3 {
+        margin: 20px 0px;
+        font-size: 1rem;
+    }
+    .contact p {
+        margin: 0;
+    }
+    input[type=email] {
+        width: 100%;
+    }
+    button {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    legend {
+        font-size: .8rem;
+        margin-bottom: 5px;
+    }
+    .bottomNav ul{
+        padding-top: 30px;
+    }
+    .bottomNav a {
+        margin: 5px 10px;
+        color: #F4F4F4;
+        text-transform: capitalize;
+        font-weight: 400;
+    }
+
+    .copyright {
+        background: #000;
+        text-align: center;
+    }
+
+    .copyright p {
+        margin: 0;
+        font-size: .8rem;
+        padding-top: 10px;
+    }
+}
